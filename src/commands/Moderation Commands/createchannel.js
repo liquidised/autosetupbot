@@ -94,7 +94,7 @@ module.exports = {
             parent: category,
         });
         interaction.guild.channels.create({
-          name: "🧑🏻┇Joins",
+          name: "🏻👋┇Joins",
           type: 0,
           parent: category,
         });
