@@ -76,7 +76,7 @@ module.exports = {
 
     function isUrl(string) {
       const pattern =
-        /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+        /^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$/;
       return pattern.test(string);
     }
 
