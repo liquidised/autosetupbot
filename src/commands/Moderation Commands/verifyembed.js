@@ -97,7 +97,7 @@ try {
     } catch (err) { console.log('There was an error with creating the webhook!' )}
 
     const webhooks = await interaction.channel.fetchWebhooks();
-    const webhook = webhooks.find((wh) => wh.token);
+    const webhook = webhooks.find((wh) => wh.name === "MEE6" );
 
     const button = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
